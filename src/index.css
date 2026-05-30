@@ -1,0 +1,126 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.glass-effect {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.card-hover {
+  transition: all 0.3s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.btn-primary {
+  @apply px-6 py-3 bg-gradient-to-r from-indigo-600 to-purple-600 text-white rounded-lg font-semibold hover:shadow-lg transition-all duration-300;
+}
+
+.btn-secondary {
+  @apply px-6 py-3 bg-white text-indigo-600 rounded-lg font-semibold border-2 border-indigo-600 hover:bg-indigo-50 transition-all duration-300;
+}
+
+.btn-small {
+  @apply px-4 py-2 rounded-lg font-medium transition-all duration-300;
+}
+
+.level-badge {
+  @apply inline-block px-3 py-1 rounded-full text-sm font-semibold;
+}
+
+.level-beginner {
+  @apply bg-green-100 text-green-800;
+}
+
+.level-intermediate {
+  @apply bg-yellow-100 text-yellow-800;
+}
+
+.level-advanced {
+  @apply bg-red-100 text-red-800;
+}
+
+.level-expert {
+  @apply bg-purple-100 text-purple-800;
+}
+
+/* Certificate styles */
+.certificate-container {
+  @apply w-full max-w-4xl mx-auto bg-white rounded-lg shadow-2xl p-12 relative overflow-hidden;
+}
+
+.certificate-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  opacity: 0.05;
+  z-index: 0;
+}
+
+.certificate-content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+
+.certificate-border {
+  border: 3px solid #667eea;
+  border-radius: 12px;
+  padding: 40px;
+}
+
+/* Animations */
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.animate-slide-in {
+  animation: slideIn 0.5s ease-out;
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.5s ease-out;
+}
