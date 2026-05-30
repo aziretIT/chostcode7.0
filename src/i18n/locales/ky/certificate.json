@@ -1,0 +1,16 @@
+{
+  "certificate": "Сертификат",
+  "certificateOfCompletion": "Аяктаган сертификаты",
+  "congratulations": "Окутпу!",
+  "completedCourse": "Сиз ийгиликтүү болуп аяктадыңыз",
+  "course": "Курс",
+  "level": "Деңгээл",
+  "issuedOn": "Чыгарылды",
+  "certificateNumber": "Сертификат номери",
+  "signedBy": "ChostCode командасы тарабынан имзаланган",
+  "downloadCertificate": "Сертификатты жүктөп алыңыз",
+  "shareCertificate": "Сертификатты бөлүшүңүз",
+  "viewCertificates": "Сертификаттарды көрүңүз",
+  "noCertificates": "Сертификаттар жок. Сертификаттар алуу үчүн курстарды аяктаңыз!",
+  "earnMore": "Башка курстарды аяктап дагы сертификаттар алыңыз"
+}
